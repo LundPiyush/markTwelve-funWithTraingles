@@ -4,14 +4,14 @@ const btnCalculate = document.querySelector("#btn-calculate");
 const message = document.querySelector("#message")
 
 function calculateHypotenuse(){
-    var result = Math.sqrt(sideOne.value**2 + sideTwo.value**2)
-    message.innerText =" Hypotenuse is " + result
+    var result = Math.sqrt(Number(sideOne.value)**2 + Number(sideTwo.value)**2)
+    message.innerText =" Hypotenuse is " + result.toFixed(2)
 }
 
 function validateInputs(){
     if(sideOne.value === '' || sideTwo.value === '')
         message.innerText = "Please enter length of sides"
-    else if(sideOne.value<=0 || sideTwo.value<=0)
+    else if(Number(sideOne.value)<=0 || Number(sideTwo.value)<=0)
         message.innerText = "Length of side should be greater than zero"
     else
         calculateHypotenuse()
