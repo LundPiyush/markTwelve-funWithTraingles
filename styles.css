@@ -8,6 +8,7 @@
 body{
     text-align: center;
 }
+
 .btn-radio{
     display: inline;
     vertical-align: text-bottom; 
@@ -23,4 +24,32 @@ input{
     border-radius: 1rem;  
 }
 
+.brand-name{
+    float: left;
+    font-size: x-large;
+}
 
+.nav-bar{
+    background-color: var(--primary-color);
+    padding: 2rem;
+    color: white;
+}
+
+.nav-bar .nav-pills{
+    text-align: center;
+}
+
+.list-inline{
+    display: inline;
+}
+
+.nav-bar .link{
+    color: var(--white);
+    text-decoration: none;
+    padding: 2rem;
+    font-size: larger;
+}
+
+.nav-bar .active{
+    font-weight: bold;
+}
