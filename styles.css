@@ -5,3 +5,22 @@
 --light-grey: #f1f5f9;
 --white: #FFFFFF;
 }
+body{
+    text-align: center;
+}
+.btn-radio{
+    display: inline;
+    vertical-align: text-bottom; 
+}
+
+input, label, button{
+    display: block;
+    margin-top: 1.5rem;
+}
+
+input{
+    height: 1rem;
+    border-radius: 1rem;  
+}
+
+
